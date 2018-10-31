@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+  <title>Pau Maliye Topluluğu</title>
+</head>
+
+<body>
+  <h2 class="content-head is-center">Bize Ulaşın!</h2>
+  <aside>
+       <p>
+           Biz <em>Sizin Fikir Ve Düşüncelerinizi </em> Duymak Istiyoruz! </p>
+           <p>Lütfen <b><em>Bu Formu Kullanarak</em></b>
+           bize ulaşın
+       </p>
+   </aside>
+
+<!-- START HERE -->
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="style.css">
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbyGGp8iYLInFXo4be_WHDF7L5yvBwF_LasCRPpd_w/exec">
+    <!-- change the form action to your script url -->
+
+    <div class="form-elements">
+     <fieldset class="pure-group">
+        <label for="message">Eklemek istediğiniz etkinlikler ? :  </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="düşüncelerinizi ve eklemek istediklerinizi merak ediyoruz .!"></textarea>
+      </fieldset>
+        <fieldset class="pure-group">
+        <label for="message2">Eklemek istediğiniz panel veya konferanslar ? :  </label>
+        <textarea id="message2" name="message2" rows="10"
+        placeholder="düşüncelerinizi ve eklemek istediklerinizi merak ediyoruz .!"></textarea>
+      </fieldset>
+        <fieldset class="pure-group">
+        <label for="message3">Eklemek istediğiniz kurslar ? :  </label>
+        <textarea id="message3" name="message3" rows="10"
+        placeholder="düşüncelerinizi ve eklemek istediklerinizi merak ediyoruz .!"></textarea>
+      </fieldset>
+        <fieldset class="pure-group">
+        <label for="message4">Eklemek istediğiniz geziler ? :  </label>
+        <textarea id="message4" name="message4" rows="10"
+        placeholder="düşüncelerinizi ve eklemek istediklerinizi merak ediyoruz .!"></textarea>
+      </fieldset>
+        <fieldset class="pure-group">
+        <label for="message5">Eklemek istediğiniz eğlenceler ? :  </label>
+        <textarea id="message5" name="message5" rows="10"
+        placeholder="düşüncelerinizi ve eklemek istediklerinizi merak ediyoruz .!"></textarea>
+      </fieldset>
+        <fieldset class="pure-group">
+        <label for="message6">Topluma hizmet etkinlikleri ? :  </label>
+        <textarea id="message6" name="message6" rows="10"
+        placeholder="düşüncelerinizi ve eklemek istediklerinizi merak ediyoruz .!"></textarea>
+      </fieldset>
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Gönder</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Tesekkürler ! </em> Fikirlerinizi bizimle paylaştığınız için teşekkür ederiz !</h2>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="form-submission-handler.js"></script>
+<!-- END -->
+
+</body>
+</html>
